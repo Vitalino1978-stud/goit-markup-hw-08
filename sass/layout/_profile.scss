@@ -1,0 +1,50 @@
+.section profile {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.profile {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+
+  &-description {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-list-img {
+    margin-right: 30px;
+    margin-left: 0px;
+    width: 370px;
+    height: 294px;
+  }
+  &-pic-last {
+    position: relative;
+    margin-left: 0px;
+  }
+  &-pic {
+    position: relative;
+  }
+  &-item {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  &-label {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
