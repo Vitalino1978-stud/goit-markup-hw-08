@@ -1,16 +1,21 @@
-.section profile {
+.section-profile {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   margin-top: 94px;
   margin-bottom: 94px;
 }
-.profile {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $secondary-color;
 
+.profile {
+  &-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+  }
   &-description {
     display: flex;
     justify-content: space-between;
