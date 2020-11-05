@@ -904,7 +904,7 @@ list {
 
 .company {
   display: flex;
-  width: 170px;
+  width: 100%;
   height: 90px;
   justify-content: center;
   align-items: center;
@@ -925,14 +925,11 @@ list {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  /*&-description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-  }*/
+}
+
+.footer-address {
+  display: flex;
+  font-style: normal;
 }
 
 .footer-list {
@@ -1018,6 +1015,49 @@ list {
   fill: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .footer-socials {
+    display: flex;
+    margin-top: 52px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer.form-wraper {
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-form {
+    display: block;
+    align-items: center;
+  }
+  .subscribe-form-input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .subscribe-form-input {
+    width: 450px;
+  }
+  .logo-container {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 /*.footer-socials-icon:hover,
   .footer-socials-icon:focus {
     background-color: $hover-color;
@@ -1040,11 +1080,6 @@ list {
 /*.footer-first {
   margin-right: 80px;
 }*/
-.logo-container {
-  display: block;
-  margin-bottom: 20px;
-}
-
 .form-wraper {
   display: flex;
   margin-top: 12px;
@@ -1052,7 +1087,7 @@ list {
   flex-direction: column;
 }
 
-.subscribe-title {
+/*.subscribe-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -1062,8 +1097,7 @@ list {
   text-align: start;
   margin-bottom: 20px;
   font-style: normal;
-}
-
+}*/
 .subscribe-form {
   display: inline-flex;
   align-items: center;
