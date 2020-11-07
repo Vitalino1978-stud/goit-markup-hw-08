@@ -18,18 +18,19 @@
       <div class="container">
         <nav class="navigation">
                   <!--логтип-->
+         
           <a class="logo-link" lang="en" href="WebStudio"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
           <button type="button" class="header-menu-button" aria-expanded="false" data-menu-button>
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="icon-menu" href="./sprite.svg#menu_40px">
+              <use class="icon-menu" href="./sprite1.svg#menu_40px">
               </use>
-              <use class="icon-cross" href="./close_40px.svg">
+              <use class="icon-cross" href="./sprite1.svg#close_40px">
               </use>
             </svg>
           </button>
           <!--ссылки на разделы-->
-      <!-- <div class="menu-container"> -->
-        
+      <div class="menu-container" id="menu-container" data-menu>
+        <div class="navigate">
           <ul class="navigation-list">
             <li class="navigation-list-item">
               <a class="navigation-link current-page-studio" href="./index.html">Студия</a>
@@ -41,11 +42,14 @@
               <a class="navigation-link" href="">Контакты</a>
             </li>
           </ul>
+          </div>
+      
         
           
           <!--контактная информация-->
           
-           <address class="address">
+        <!-- <address class="address"> -->
+          <div class="contact">
             <ul class="address-list">
               <li class="address-list-item">
                 <a class="address-mail-link" href="mailto:info@devstudio.com">
@@ -64,10 +68,12 @@
                 >
               </li>
             </ul>
-          </address>
+            </div>
+          <!-- </address> -->
+          
+          </div>
           </nav>
-        <!-- </div> -->
-      </div>
+        </div>
     </header> 
     <!--контент странички-->
     <main>
