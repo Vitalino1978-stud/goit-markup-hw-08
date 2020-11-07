@@ -449,6 +449,11 @@ list {
   }
 }
 
+.icon-menu,
+.icon-cross {
+  position: absolute;
+}
+
 .logo-web {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
