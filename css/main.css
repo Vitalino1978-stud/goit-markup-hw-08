@@ -454,15 +454,17 @@ list {
   }
 }
 
-.menu-container-is-open {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  /*padding-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .menu-container.is-open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    /*padding-bottom: 60px;
   /*z-index: 999;*/
+  }
 }
 
 .icon-menu,
@@ -571,8 +573,14 @@ list {
   }
 }
 
-.address-list-item:not(:last-child) {
+.address-item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .address-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 .address-mail-link {

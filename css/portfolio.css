@@ -84,7 +84,561 @@ list {
 }
 
 /*@import "./layout/header";*/
-/*@import "./layout/footer";*/
+/*tot*/
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-address {
+  display: flex;
+  flex-wrap: wrap;
+  font-style: normal;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.footer-list-map {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.footer-list-mail, .footer-list-tel {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 8px;
+}
+
+.footer-list-mail:hover, .footer-list-tel:hover, .footer-list-mail:focus, .footer-list-tel:focus {
+  color: #2196f3;
+}
+
+.footer-socials {
+  display: flex;
+  margin-top: 12px;
+  margin-left: 70px;
+  flex-direction: column;
+}
+
+.footer-socials-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: start;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.footer-socials-list {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+}
+
+.footer-socials-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-socials-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-socials-icon:hover, .footer-socials-icon:focus {
+  background-color: #2196f3;
+}
+
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+/*end of tot*/
+/*767-max*/
+@media screen and (max-width: 767px) {
+  .logo-container {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .footer-socials {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .form-wraper {
+    display: flex;
+    margin-top: 52px;
+    /*margin-left: 93px;*/
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-form {
+    display: block;
+    align-items: center;
+  }
+  .subscribe-form-input {
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  .subscribe-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+    margin-left: 25%;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.143;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    text-align: left;
+    border-style: none;
+    background-color: #2196f3;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .subscribe-button::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border-radius: 4px;*/
+  }
+  .iconsend::after {
+    background-image: url(../svg/iconsend.svg);
+  }
+  .logo-studio-footer {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+}
+
+/*end of 768-max*/
+/*min-768 - max-1199*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin-right: 165px;*/
+  }
+  .footer-socials {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .form-wraper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-form {
+    display: inline-flex;
+    align-items: center;
+  }
+  .subscribe-form-input {
+    width: 358px;
+    height: 50px;
+    /*padding-top: 15px;
+  padding-bottom: 15px;*/
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  .subscribe-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.143;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    text-align: left;
+    border-style: none;
+    background-color: #2196f3;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .subscribe-button::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border-radius: 4px;*/
+  }
+  .logo-studio-footer {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  .iconsend::after {
+    background-image: url(../svg/iconsend.svg);
+  }
+}
+
+/*end of min-768 - max1199*/
+/*min1200*/
+@media screen and (min-width: 1200px) {
+  .footer {
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-address {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    font-style: normal;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .footer-list-map {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .footer-list-mail, .footer-list-tel {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 8px;
+  }
+  .footer-list-mail:hover, .footer-list-tel:hover, .footer-list-mail:focus, .footer-list-tel:focus {
+    color: #2196f3;
+  }
+  .footer-socials {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 70px;
+    flex-direction: column;
+  }
+  .footer-socials-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: start;
+    margin-bottom: 20px;
+    font-style: normal;
+  }
+  .footer-socials-list {
+    display: flex;
+    width: 206px;
+    justify-content: space-between;
+  }
+  .footer-socials-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-socials-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-socials-icon:hover, .footer-socials-icon:focus {
+    background-color: #2196f3;
+  }
+  .footer-svg {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+  .logo-container {
+    display: block;
+    margin-bottom: 20px;
+    /*text-align: center;*/
+  }
+  .form-wraper {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 93px;
+    flex-direction: column;
+  }
+  .subscribe-form {
+    display: inline-flex;
+    align-items: center;
+  }
+  .subscribe-form-input {
+    width: 358px;
+    height: 50px;
+    /*padding-top: 15px;
+  padding-bottom: 15px;*/
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  .subscribe-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.143;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    text-align: left;
+    border-style: none;
+    background-color: #2196f3;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .subscribe-button::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border-radius: 4px;*/
+  }
+  .logo-studio-footer {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  .iconsend::after {
+    background-image: url(../svg/iconsend.svg);
+  }
+}
+
+/*end of min-1200*/
+/*.subscribe-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        height: 50px;
+        padding: 10px 29px;
+        margin-left: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 1.143;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        text-align: left;
+        border-style: none;
+        background-color: $hover-color;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &::after {
+          display: block;
+          content: "";
+          width: 24px;
+          height: 24px;
+          background-color: transparent;
+          background-repeat: no-repeat;
+          background-position: center;
+          /*border-radius: 4px;
+        }
+      }*/
+/*.iconsend::after {
+        background-image: url(../svg/iconsend.svg);
+      }*/
+/*.logo-studio-footer {
+      font-family: "Raleway", sans-serif;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 31px;
+      /* identical to box height 
+      letter-spacing: 0.03em;
+      color: #ffffff;
+    }
+
+    /*footer address {
+  
+}*/
+/*.footer-first {
+  margin-right: 80px;
+}*/
+/*.form-wraper {
+  display: flex;
+  margin-top: 12px;
+  margin-left: 93px;
+  flex-direction: column;
+}
+/*.subscribe-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: start;
+  margin-bottom: 20px;
+  font-style: normal;
+}*/
+/*.subscribe-form {
+  display: inline-flex;
+  align-items: center;
+
+  &-input {
+    width: 358px;
+    height: 50px;
+    /*padding-top: 15px;
+  padding-bottom: 15px;
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #ffffff;
+  }
+}
+.subscribe-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  height: 50px;
+  padding: 10px 29px;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.143;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  text-align: left;
+  border-style: none;
+  background-color: $hover-color;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border-radius: 4px;
+  }
+}*/
+.iconsend::after {
+  background-image: url(../svg/iconsend.svg);
+}
+
 .completed {
   padding-top: 94px;
   padding-bottom: 94px;

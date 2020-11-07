@@ -41,11 +41,13 @@
 
 .menu-container {
   text-align: center;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
-  &-is-open {
+}
+
+.menu-container.is-open {
+  @media screen and (max-width: 767px) {
     display: block;
     position: absolute;
     top: 100%;
@@ -157,11 +159,12 @@
       align-items: center;
       justify-content: center;
     }
+  }
 
-    &-item:not(:last-child) {
-      margin-right: 30px;
-      @media screen and (max-width: 767px) {
-    margin-bottom: 16px;
+  &-item:not(:last-child) {
+    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
     }
   }
 
