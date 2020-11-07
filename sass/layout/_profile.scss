@@ -1,9 +1,10 @@
 .section-profile {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
   margin-top: 94px;
   margin-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .profile {

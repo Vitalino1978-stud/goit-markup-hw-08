@@ -168,6 +168,7 @@ list {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  padding: 94px 15px;
 }
 
 .backdrop.is-hidden {
@@ -196,9 +197,9 @@ list {
   padding: 40px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .modal {
-    /*position: absolute;*/
+    position: relative;
     width: 450px;
     min-width: 450px;
     height: 609px;
@@ -635,12 +636,14 @@ list {
   }
 }
 
-.advantage-container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.advantage {
+  /*&-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }*/
 }
 
 .advantage-list {
@@ -737,7 +740,7 @@ list {
   margin-bottom: 94px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section-profile {
     display: none;
   }
