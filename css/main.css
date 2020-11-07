@@ -389,8 +389,50 @@ list {
   background-color: #ffffff;
 }
 
-.header-container {
+.header.container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-container {
+  display: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: absolute;
+    top: 61px;
+    left: 0%;
+    width: 100%;
+    height: 393px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+}
+
+.header-menu-button {
+  display: flex;
+  border-style: none;
+  background: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu-button {
+    display: none;
+  }
 }
 
 .logo-web {
@@ -425,6 +467,12 @@ list {
 .navigation-list {
   display: flex;
   margin-left: 92px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-list {
+    display: flex;
+  }
 }
 
 .navigation-list-item:not(:last-child) {
@@ -538,6 +586,8 @@ list {
   fill: #2196f3;
 }
 
+/*.menu {
+}*/
 .hero {
   border-top: #757575;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imj/hero-imj-compressed.jpg);
@@ -738,6 +788,13 @@ list {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .workers {
+    padding-bottom: 30px;
+    padding-top: 60px;
+  }
+}
+
 .team-title {
   margin-bottom: 50px;
   border-top: 0px;
@@ -749,11 +806,32 @@ list {
   color: #212121;
 }
 
+@media screen and (max-width: 1199px) {
+  .team-title {
+    font-size: 28px;
+  }
+}
+
 .team-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*flex-wrap: nowrap;*/
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-list {
+    display: block;
+    flex-wrap: nowrap;
+  }
 }
 
 .team-item {
@@ -761,6 +839,20 @@ list {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .team-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .member-description {
@@ -785,29 +877,27 @@ list {
   color: #757575;
 }
 
-/*.members-list {
-  display: flex;
-  justify-content: space-between;
-}*/
-/*.team-img {
-  display: block;
-}*/
 .socials-list {
   margin-top: 16px;
   margin-right: 32px;
   margin-bottom: 30px;
   margin-left: 32px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .socials-icon {
   display: inline-flex;
   width: 44px;
   height: 44px;
+  /*margin-right: 10px;*/
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
   border-radius: 50%;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -921,6 +1011,7 @@ list {
   fill: #2196f3;
 }
 
+/*tot*/
 .footer {
   background: #2f303a;
   padding-top: 60px;
@@ -929,6 +1020,7 @@ list {
 
 .footer-address {
   display: flex;
+  flex-wrap: wrap;
   font-style: normal;
 }
 
@@ -1015,6 +1107,8 @@ list {
   fill: #ffffff;
 }
 
+/*end of tot*/
+/*767-max*/
 @media screen and (max-width: 767px) {
   .logo-container {
     display: block;
@@ -1039,12 +1133,6 @@ list {
     flex-direction: column;
     margin-left: 0px;
   }
-  /*.footer.form-wraper {
-    display: block;
-    margin-top: 60px;
-    flex-direction: column;
-    align-items: center;
-  }*/
   .form-wraper {
     display: flex;
     margin-top: 52px;
@@ -1099,8 +1187,21 @@ list {
   .iconsend::after {
     background-image: url(../svg/iconsend.svg);
   }
+  .logo-studio-footer {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
 }
 
+/*end of 768-max*/
+/*min-768 - max-1199*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .container {
     display: flex;
@@ -1108,35 +1209,24 @@ list {
     justify-content: center;
   }
   .logo-container {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 165px;
+    /*margin-right: 165px;*/
   }
   .footer-socials {
+    width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-left: 0px;
   }
   .form-wraper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 1200px) {
-  .logo-container {
-    display: block;
-    margin-bottom: 20px;
-    /*text-align: center;*/
-  }
-  .form-wraper {
-    display: flex;
-    margin-top: 12px;
-    margin-left: 93px;
-    flex-direction: column;
   }
   .subscribe-form {
     display: inline-flex;
@@ -1152,39 +1242,6 @@ list {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: #ffffff;
-  }
-  .subscribe-form .subscribe-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 200px;
-    height: 50px;
-    padding: 10px 29px;
-    margin-left: 12px;
-    font-weight: 700;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.143;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    text-align: left;
-    border-style: none;
-    background-color: #2196f3;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .subscribe-form .subscribe-button::after {
-    display: block;
-    content: "";
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-    /*border-radius: 4px;*/
-  }
-  .subscribe-form .iconsend::after {
-    background-image: url(../svg/iconsend.svg);
   }
   .subscribe-button {
     display: inline-flex;
@@ -1216,16 +1273,6 @@ list {
     background-position: center;
     /*border-radius: 4px;*/
   }
-  .iconsend::after {
-    background-image: url(../svg/iconsend.svg);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  /*.footer-socials-icon:hover,
-  .footer-socials-icon:focus {
-    background-color: $hover-color;
-  }*/
   .logo-studio-footer {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
@@ -1237,13 +1284,221 @@ list {
     letter-spacing: 0.03em;
     color: #ffffff;
   }
-  /*footer address {
+  .iconsend::after {
+    background-image: url(../svg/iconsend.svg);
+  }
+}
+
+/*end of min-768 - max1199*/
+/*min1200*/
+@media screen and (min-width: 1200px) {
+  .footer {
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-address {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    font-style: normal;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .footer-list-map {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .footer-list-mail, .footer-list-tel {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 8px;
+  }
+  .footer-list-mail:hover, .footer-list-tel:hover, .footer-list-mail:focus, .footer-list-tel:focus {
+    color: #2196f3;
+  }
+  .footer-socials {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 70px;
+    flex-direction: column;
+  }
+  .footer-socials-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: start;
+    margin-bottom: 20px;
+    font-style: normal;
+  }
+  .footer-socials-list {
+    display: flex;
+    width: 206px;
+    justify-content: space-between;
+  }
+  .footer-socials-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-socials-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-socials-icon:hover, .footer-socials-icon:focus {
+    background-color: #2196f3;
+  }
+  .footer-svg {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+  .logo-container {
+    display: block;
+    margin-bottom: 20px;
+    /*text-align: center;*/
+  }
+  .form-wraper {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 93px;
+    flex-direction: column;
+  }
+  .subscribe-form {
+    display: inline-flex;
+    align-items: center;
+  }
+  .subscribe-form-input {
+    width: 358px;
+    height: 50px;
+    /*padding-top: 15px;
+  padding-bottom: 15px;*/
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  .subscribe-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.143;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    text-align: left;
+    border-style: none;
+    background-color: #2196f3;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .subscribe-button::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border-radius: 4px;*/
+  }
+  .logo-studio-footer {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  .iconsend::after {
+    background-image: url(../svg/iconsend.svg);
+  }
+}
+
+/*end of min-1200*/
+/*.subscribe-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        height: 50px;
+        padding: 10px 29px;
+        margin-left: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 1.143;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        text-align: left;
+        border-style: none;
+        background-color: $hover-color;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &::after {
+          display: block;
+          content: "";
+          width: 24px;
+          height: 24px;
+          background-color: transparent;
+          background-repeat: no-repeat;
+          background-position: center;
+          /*border-radius: 4px;
+        }
+      }*/
+/*.iconsend::after {
+        background-image: url(../svg/iconsend.svg);
+      }*/
+/*.logo-studio-footer {
+      font-family: "Raleway", sans-serif;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 31px;
+      /* identical to box height 
+      letter-spacing: 0.03em;
+      color: #ffffff;
+    }
+
+    /*footer address {
   
 }*/
-  /*.footer-first {
+/*.footer-first {
   margin-right: 80px;
 }*/
-  /*.form-wraper {
+/*.form-wraper {
   display: flex;
   margin-top: 12px;
   margin-left: 93px;
@@ -1260,7 +1515,7 @@ list {
   margin-bottom: 20px;
   font-style: normal;
 }*/
-  /*.subscribe-form {
+/*.subscribe-form {
   display: inline-flex;
   align-items: center;
 
@@ -1307,8 +1562,7 @@ list {
     /*border-radius: 4px;
   }
 }*/
-  .iconsend::after {
-    background-image: url(../svg/iconsend.svg);
-  }
+.iconsend::after {
+  background-image: url(../svg/iconsend.svg);
 }
 /*# sourceMappingURL=main.css.map */
