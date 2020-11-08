@@ -1,8 +1,8 @@
 @import "./utils/variables";
 @import "./base/common";
 @import "./base/container";
-
-/*@import "./layout/header";*/
+@import "./components/completed";
+@import "./layout/header";
 @import "./layout/footer";
 @import "./components/completed";
 @import "./components/modal-btn";

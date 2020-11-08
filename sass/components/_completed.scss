@@ -4,11 +4,21 @@
 }
 .knobs {
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-top: -21px;
+  margin-left: -8px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 
   &-item {
-    margin-right: 8px;
+    margin-top: 21px;
+    margin-left: 8px;
     padding: 6px 22px;
     border-radius: 4px;
     font-weight: 500;
@@ -42,14 +52,52 @@
 .work-description {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
+
+  /* @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }*/
 }
 .work-desc-container {
-  width: 370px;
+  /*width: 370px;*/
+  height: 100%;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  margin: 15px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:not(:nth-child(3n)) {
+  /*max-width: 450px;*/
+
+  /*&:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 15px * 4) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 15px * 6) / 3);
+  }
+
+  /*@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }*/
+
+  /*@media screen and (max-width: 1199px) and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 30px;
+  }*/
+  /*&:not(:nth-child(3n)) {
     margin-right: 30px;
   }
   &:not(:nth-child(n + 7)) {
@@ -58,6 +106,19 @@
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }*/
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
 }
 .work-desc-container:hover .overlay {
@@ -65,8 +126,8 @@
 }
 
 .box {
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%100%;
   position: relative;
   overflow: hidden;
 }
@@ -103,6 +164,7 @@
 
 .work {
   &-card {
+    width: 100%;
     padding: 20px 24px;
   }
   &-company {
@@ -114,7 +176,7 @@
     color: $secondary-color;
   }
 
-  &-description {
+  &-descript {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;

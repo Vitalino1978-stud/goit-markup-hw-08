@@ -13,53 +13,70 @@
   </head>
 
   <body>
-    <!--шапка страницы-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
-        <nav class="navigation"> -->
+        <nav class="navigation">
           <!--логтип-->
-          <!-- <a class="logo-link" lang="en" href="WebStudio"><span class="logo-web">Web</span><span
-              class="logo-studio">Studio</span></a> -->
+    
+          <a class="logo-link" lang="en" href="WebStudio"><span class="logo-web">Web</span><span
+              class="logo-studio">Studio</span></a>
+          <button type="button" class="header-menu-button" aria-expanded="false" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu" href="./images/header-sprite.svg#icon-burger">
+              </use>
+              <use class="icon-cross" href="./images/header-sprite.svg#icon-cross">
+              </use>
+            </svg>
+          </button>
           <!--ссылки на разделы-->
-          <!-- <ul class="navigation-list">
-            <li class="navigation-list-item">
-              <a class="navigation-link current-page" href="./index.html" >Студия</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-link current-page-portfolio" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-link" href="" >Контакты</a>
-            </li>
-          </ul> -->
-          <!--контактная информация-->
-          <!-- <address class="address">
-            <ul class="address-list">
-              <li class="address-list-item">
-                <a class="address-mail-link" href="mailto:info@devstudio.com">
-                  <svg class="address-mail-envelope">
-                    <use href="./sprite.svg#envelope"></use>
-                  </svg>
-                  info@devstudio.com</a>
-              </li>
-              <li class="address-list-item">
-                <a class="address-tel-link" href="tel:+380961111111">
-                  <svg class="address-tel-smart">
-                    <use href="./sprite.svg#smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigate">
+              <ul class="navigation-list">
+                <li class="navigation-list-item">
+                  <a class="navigation-link" href="./index.html">Студия</a>
+                </li>
+                <li class="navigation-list-item">
+                  <a class="navigation-link current-page-studio" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="navigation-list-item">
+                  <a class="navigation-link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+        
+            <!--контактная информация-->
+    
+            <!-- <address class="address"> -->
+            <div class="contact">
+              <ul class="address-list">
+                <li class="address-list-item">
+                  <a class="address-mail-link" href="mailto:info@devstudio.com">
+                    <svg class="address-mail-envelope">
+                      <use href="./sprite.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                </li>
+                <li class="address-list-item">
+                  <a class="address-tel-link" href="tel:+380961111111">
+                    <svg class="address-tel-smart">
+                      <use href="./sprite.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+                </li>
+              </ul>
+            </div>
+            <!-- </address> -->
+    
+          </div>
         </nav>
       </div>
-    </header> -->
+    </header>
     <!--контент странички-->
     <main>
       <!--ссылки на виды работ-->
       <section class="completed">
         <div class="container">
-          <!-- <ul class="knobs">
+          <ul class="knobs">
             <li class="knobs-name">
               <a href="Все"><button class="knobs-item" type="button">Все</button></a>
             </li>
@@ -75,7 +92,7 @@
             <li class="knobs-name">
               <a href="Маркетинг"><button class="knobs-item" type="button">Маркетинг</button></a>
             </li>
-          </ul> -->
+          </ul>
 
           <ul class="work-description">
             <li class="work-desc-container">
@@ -92,7 +109,7 @@
                 </div>
                 <div class="work-card">
                   <h2 class="work-company">Технокряк</h2>
-                  <p class="work-description">Веб-сайт</p>
+                  <p class="work-descript">Веб-сайт</p>
                 </div>
               </a>
                 
@@ -111,7 +128,7 @@
               </div>
               <div class="work-card">
                 <h2 class="work-company">Постер <span lang="en">New Orlean vs Golden star</span></h2>
-                <p class="work-description">Дизайн</p>
+                <p class="work-descript">Дизайн</p>
               </div>
               </a>
             </li>
@@ -129,7 +146,7 @@
               </div>
               <div class="work-card">
                 <h2 class="work-company">Ресторан <span lang="en">Seafood</span></h2>
-                <p class="work-description">Приложение</p>
+                <p class="work-descript">Приложение</p>
               </div>
               </a>
             </li>
@@ -147,7 +164,7 @@
               </div>
               <div class="work-card">
                 <h2 class="work-company">Проект<span lang="en"> Prime</span></h2>
-                <p class="work-description">Маркетинг</p>
+                <p class="work-descript">Маркетинг</p>
               </div>
               </a>
 
@@ -165,7 +182,7 @@
               </div>
               <div class="work-card">
                 <h2 class="work-company">Проект <span lang="en"> Boxes</span></h2>
-                <p class="work-description">Приложение</p>
+                <p class="work-descript">Приложение</p>
               </div>
               </a>
             </li>
@@ -183,7 +200,7 @@
               </div>
               <div class="work-card">
                 <h2 class="work-company"><span lang="en">Inspiration has no Borders</span></h2>
-                <p class="work-description">Веб-сайт</p>
+                <p class="work-descript">Веб-сайт</p>
               </div>
               </a>
             </li>
@@ -201,7 +218,7 @@
               </div>
               <div class="work-card">
                 <h2 class="work-company">Издание <span lang="en">Limited Edition</span></h2>
-                <p class="work-description">Дизайн</p>
+                <p class="work-descript">Дизайн</p>
               </div>
               </a>
             </li>
@@ -219,7 +236,7 @@
               </div>
               <div class="work-card">
                 <h2 class="work-company">Проект <span lang="en">Lab</span></h2>
-                <p class="work-description">Маркетинг</p>
+                <p class="work-descript">Маркетинг</p>
               </div>
               </a>
             </li>
@@ -236,7 +253,7 @@
               </div>
               <div class="work-card">
                 <h2 class="work-company"><span lang="en">Growing Business</span></h2>
-                <p class="work-description">Приложение</p>
+                <p class="work-descript">Приложение</p>
               </div>
               </a>
             </li>
@@ -246,10 +263,11 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <address class="address">
+        <address class="footer-address">
           <div class="logo-container">
-            <a class="logo-link" href="WebStudio"><span class="logo-web">Web</span> <span
+            <a class="logo-link" href="index.html"><span class="logo-web">Web</span> <span
                 class="logo-studio-footer">Studio</span></a>
+    
             <ul class="footer-list">
               <li>
                 <a class="footer-list-map" href="https://goo.gl/maps/9hXhkvQrHoETYkARA" target="_blank">
@@ -299,7 +317,7 @@
             </ul>
           </div>
           <div class="form-wraper">
-            <h3 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+            <h3 class="footer-socials-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
             <form action="#" method="GET" class="subscribe-form">
               <input type="email" class="subscribe-form-input" placeholder="E-mail">
               <button type="submit" class="subscribe-button iconsend">Подписаться</button>
