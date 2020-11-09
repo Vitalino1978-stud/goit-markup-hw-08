@@ -7,7 +7,7 @@ html {
 *::after {
   margin: 0;
   padding: 0;
-  /*outline: 2px solid red;*/
+  *outline: 2px solid red;
 }
 
 body {
@@ -51,18 +51,13 @@ list {
   list-style: none;
 }
 
-.section {
-  padding-top: 94px;
-  /*padding-bottom: 94px;*/
-}
-
 .container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /*outline: 2px solid red;*/
+  outline: 2px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -225,7 +220,7 @@ list {
   .picture {
     display: block;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -367,8 +362,8 @@ list {
     left: 0;
     width: 100%;
     background-color: #fff;
-    /*padding-bottom: 60px;
-  /*z-index: 999;*/
+    padding-bottom: 60px;
+    z-index: 999;
   }
 }
 

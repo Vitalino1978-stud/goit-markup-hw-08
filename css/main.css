@@ -18,7 +18,7 @@ html {
 *::after {
   margin: 0;
   padding: 0;
-  /*outline: 2px solid red;*/
+  *outline: 2px solid red;
 }
 
 body {
@@ -62,18 +62,13 @@ list {
   list-style: none;
 }
 
-.section {
-  padding-top: 94px;
-  /*padding-bottom: 94px;*/
-}
-
 .container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /*outline: 2px solid red;*/
+  outline: 2px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -481,8 +476,8 @@ list {
     left: 0;
     width: 100%;
     background-color: #fff;
-    /*padding-bottom: 60px;
-  /*z-index: 999;*/
+    padding-bottom: 60px;
+    z-index: 999;
   }
 }
 
@@ -899,6 +894,10 @@ list {
   }
 }
 
+.section .advantage {
+  padding-top: 0px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantage-list {
     display: flex;
@@ -916,8 +915,8 @@ list {
 @media screen and (min-width: 1200px) {
   .advantage-list {
     display: flex;
-    padding-top: 90px;
-    padding-bottom: 94px;
+    /*padding-top: 90px;*/
+    padding-bottom: 0px;
     margin-right: -30px;
   }
   .advantage-list-item {
@@ -1035,10 +1034,12 @@ list {
   }
 }
 
-.team-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
@@ -1058,10 +1059,13 @@ list {
 }
 
 .team-item {
-  width: 100%;
+  width: 270px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  /*@media screen and (min-width: 1200px) {
+     margin-right: 30px;
+    }*/
 }
 
 @media screen and (max-width: 767px) {
@@ -1075,6 +1079,7 @@ list {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    margin-right: 0px;
   }
 }
 
@@ -1082,7 +1087,7 @@ list {
   .team-photo {
     display: block;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
   }
 }
 

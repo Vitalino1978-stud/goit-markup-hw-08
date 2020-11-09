@@ -25,11 +25,10 @@
     }
   }
   &-list {
-    @media screen and (min-width: 1200px){
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     @media screen and (max-width: 1199px) and (min-width: 768px) {
@@ -71,7 +70,7 @@
   .team-photo {
     display: block;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
   }
 }
 

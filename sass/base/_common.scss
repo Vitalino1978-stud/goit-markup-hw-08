@@ -6,7 +6,7 @@ html {
 *::after {
   margin: 0;
   padding: 0;
-  /*outline: 2px solid red;*/
+  *outline: 2px solid red;
 }
 
 body {
@@ -44,8 +44,4 @@ list {
   display: flex;
   flex-direction: row;
   list-style: none;
-}
-.section {
-  padding-top: 94px;
-  /*padding-bottom: 94px;*/
 }
