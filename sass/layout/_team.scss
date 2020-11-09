@@ -59,6 +59,15 @@
     }
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .team-photo {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .member {
   &-description {
     margin-top: 30px;
