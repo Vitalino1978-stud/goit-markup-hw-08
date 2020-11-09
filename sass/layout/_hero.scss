@@ -1,12 +1,28 @@
 .hero {
   border-top: $accent-color;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imj/hero-imj-compressed.jpg);
+  /*background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imagess/mobile/section-hero/Hero-x1-mo);*/
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././imagess/mobile/section-hero/Hero-x1-mob.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././imagess/tablet/section-hero/Hero-x1-tab.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././imagess/desktop/section-hero/Hero-x1-des.jpg);
+  }
+
+  /*@media not all, screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imagess/mobile/section-hero/Hero-x1-mob);
+  }*/
 
   &-container {
     text-align: center;
@@ -24,6 +40,25 @@
     margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
       font-size: 44px;
+    }
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././imagess/mobile/section-hero/Hero-x2-mob.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././imagess/tablet/section-hero/Hero-x2-tab.jpg);
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././imagess/desktop/section-hero/Hero-x2-des.jpg);
     }
   }
 }
