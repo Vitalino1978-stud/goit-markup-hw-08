@@ -864,11 +864,23 @@ list {
     flex-direction: column;
     margin-left: 0px;
   }
+  .footer-socials-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: normal;
+  }
   .form-wraper {
     width: 100%;
     /*display: flex;*/
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .subscribe-form {
     display: inline-flex;
@@ -987,7 +999,7 @@ list {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
-    text-align: center;
+    text-align: start;
     margin-bottom: 20px;
     font-style: normal;
   }
