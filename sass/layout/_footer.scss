@@ -215,13 +215,14 @@
   }
   .form-wraper {
     width: 100%;
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     align-items: center;
   }
   .subscribe-form {
     display: inline-flex;
     align-items: center;
+    flex-direction: column;
 
     &-input {
       width: 358px;
@@ -233,6 +234,7 @@
       border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 4px;
       color: #ffffff;
+      margin-bottom: 20px;
     }
   }
   .subscribe-button {
@@ -343,7 +345,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #ffffff;
-        text-align: start;
+        text-align: center;
         margin-bottom: 20px;
         font-style: normal;
       }
