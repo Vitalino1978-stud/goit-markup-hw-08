@@ -448,7 +448,7 @@ list {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .navigate {
-    margin-right: 84px;
+    margin-right: 70px;
   }
 }
 
@@ -474,7 +474,7 @@ list {
 @media screen and (min-width: 768px) {
   .menu-container {
     display: flex;
-    margin-left: 88px;
+    margin-left: 78px;
     align-items: center;
   }
 }
